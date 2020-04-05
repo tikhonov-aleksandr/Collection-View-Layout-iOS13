@@ -19,6 +19,7 @@
 		0D18C6EF243921F10081C52A /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18C6EE243921F10081C52A /* MenuTableViewController.swift */; };
 		0D18C6F124392C700081C52A /* TwoColumnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18C6F024392C700081C52A /* TwoColumnViewController.swift */; };
 		0D18C6F3243A0B020081C52A /* InsetItemsGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18C6F2243A0B020081C52A /* InsetItemsGridViewController.swift */; };
+		0D18C6F5243A18AB0081C52A /* DistinctSectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18C6F4243A18AB0081C52A /* DistinctSectionsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		0D18C6EE243921F10081C52A /* MenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
 		0D18C6F024392C700081C52A /* TwoColumnViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoColumnViewController.swift; sourceTree = "<group>"; };
 		0D18C6F2243A0B020081C52A /* InsetItemsGridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetItemsGridViewController.swift; sourceTree = "<group>"; };
+		0D18C6F4243A18AB0081C52A /* DistinctSectionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistinctSectionsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 				0D18C6EC243921370081C52A /* GridViewController.swift */,
 				0D18C6F024392C700081C52A /* TwoColumnViewController.swift */,
 				0D18C6F2243A0B020081C52A /* InsetItemsGridViewController.swift */,
+				0D18C6F4243A18AB0081C52A /* DistinctSectionsViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -173,6 +176,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D18C6F5243A18AB0081C52A /* DistinctSectionsViewController.swift in Sources */,
 				0D11C6A524366400006D9167 /* ListViewController.swift in Sources */,
 				0D18C6ED243921370081C52A /* GridViewController.swift in Sources */,
 				0D18C6EF243921F10081C52A /* MenuTableViewController.swift in Sources */,

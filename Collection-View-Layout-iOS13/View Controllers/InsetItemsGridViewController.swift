@@ -64,7 +64,7 @@ class InsetItemsGridViewController: UIViewController {
         
         var snapshot = NSDiffableDataSourceSnapshot<Section, Int>()
         snapshot.appendSections([.main])
-        snapshot.appendItems(Array(0..<94))
+        snapshot.appendItems(Array(0..<100))
         dataSource.apply(snapshot, animatingDifferences: false)
     }
 }

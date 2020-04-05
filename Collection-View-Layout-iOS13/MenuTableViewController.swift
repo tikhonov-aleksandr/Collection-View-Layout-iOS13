@@ -18,7 +18,8 @@ class MenuTableViewController: UITableViewController {
             "ListViewController",
             "GridViewController",
             "TwoColumnViewController",
-            "InsetItemsGridViewController"
+            "InsetItemsGridViewController",
+            "DistinctSectionsViewController"
         ]
     }
 
@@ -27,12 +28,12 @@ class MenuTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         viewControllers.count
     }
-
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         let viewController = viewControllers[indexPath.row]
-        cell.textLabel?.text = viewController
+        let name: String = self.name(from: viewController)
+        cell.textLabel?.text = name
         return cell
     }
     
@@ -42,6 +43,21 @@ class MenuTableViewController: UITableViewController {
         let viewController = viewControllers[indexPath.row]
         let vc = storyboard!.instantiateViewController(identifier: viewController)
         navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    // MARK: - Private methods
+    
+    
+    private func name(from viewController: String) -> String {
+        // "ListViewController" -> "List View Controller"
+        var result = ""
+        for c in viewController {
+            if c.isUppercase {
+                result.append(" ")
+            }
+            result.append(c)
+        }
+        return result
     }
 
 }
