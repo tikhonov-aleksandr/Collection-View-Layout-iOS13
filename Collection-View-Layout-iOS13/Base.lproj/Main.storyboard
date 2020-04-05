@@ -66,6 +66,36 @@
             </objects>
             <point key="canvasLocation" x="2054" y="-275"/>
         </scene>
+        <!--Two Column View Controller-->
+        <scene sceneID="002-8L-rmG">
+            <objects>
+                <viewController storyboardIdentifier="TwoColumnViewController" id="kMp-Gj-N8J" customClass="TwoColumnViewController" customModule="Collection_View_Layout_iOS13" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="13z-XB-G00">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="XA7-Ex-Yq0"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QPv-BB-Mct" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2830" y="-275"/>
+        </scene>
+        <!--Inset Items Grid View Controller-->
+        <scene sceneID="yW4-QH-RiX">
+            <objects>
+                <viewController storyboardIdentifier="InsetItemsGridViewController" id="3fe-3p-lOL" customClass="InsetItemsGridViewController" customModule="Collection_View_Layout_iOS13" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KIK-gH-VGk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="IBo-Gs-ttr"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OOn-Cv-SkC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3657" y="-275"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="QZx-Hu-6vU">
             <objects>

@@ -17,6 +17,8 @@
 		0D18C6E92438CA550081C52A /* DummyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D18C6E72438CA550081C52A /* DummyCell.xib */; };
 		0D18C6ED243921370081C52A /* GridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18C6EC243921370081C52A /* GridViewController.swift */; };
 		0D18C6EF243921F10081C52A /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18C6EE243921F10081C52A /* MenuTableViewController.swift */; };
+		0D18C6F124392C700081C52A /* TwoColumnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18C6F024392C700081C52A /* TwoColumnViewController.swift */; };
+		0D18C6F3243A0B020081C52A /* InsetItemsGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18C6F2243A0B020081C52A /* InsetItemsGridViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		0D18C6E72438CA550081C52A /* DummyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DummyCell.xib; sourceTree = "<group>"; };
 		0D18C6EC243921370081C52A /* GridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridViewController.swift; sourceTree = "<group>"; };
 		0D18C6EE243921F10081C52A /* MenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
+		0D18C6F024392C700081C52A /* TwoColumnViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoColumnViewController.swift; sourceTree = "<group>"; };
+		0D18C6F2243A0B020081C52A /* InsetItemsGridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetItemsGridViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +86,8 @@
 			children = (
 				0D11C6A424366400006D9167 /* ListViewController.swift */,
 				0D18C6EC243921370081C52A /* GridViewController.swift */,
+				0D18C6F024392C700081C52A /* TwoColumnViewController.swift */,
+				0D18C6F2243A0B020081C52A /* InsetItemsGridViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -170,8 +176,10 @@
 				0D11C6A524366400006D9167 /* ListViewController.swift in Sources */,
 				0D18C6ED243921370081C52A /* GridViewController.swift in Sources */,
 				0D18C6EF243921F10081C52A /* MenuTableViewController.swift in Sources */,
+				0D18C6F3243A0B020081C52A /* InsetItemsGridViewController.swift in Sources */,
 				0D11C6A124366400006D9167 /* AppDelegate.swift in Sources */,
 				0D11C6A324366400006D9167 /* SceneDelegate.swift in Sources */,
+				0D18C6F124392C700081C52A /* TwoColumnViewController.swift in Sources */,
 				0D18C6E82438CA550081C52A /* DummyCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

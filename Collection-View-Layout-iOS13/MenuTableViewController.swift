@@ -16,7 +16,9 @@ class MenuTableViewController: UITableViewController {
         super.viewDidLoad()
         viewControllers = [
             "ListViewController",
-            "GridViewController"
+            "GridViewController",
+            "TwoColumnViewController",
+            "InsetItemsGridViewController"
         ]
     }
 
