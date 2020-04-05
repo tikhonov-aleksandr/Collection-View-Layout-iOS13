@@ -19,7 +19,8 @@ class MenuTableViewController: UITableViewController {
             "GridViewController",
             "TwoColumnViewController",
             "InsetItemsGridViewController",
-            "DistinctSectionsViewController"
+            "DistinctSectionsViewController",
+            "AdaptiveSectionsViewController"
         ]
     }
 

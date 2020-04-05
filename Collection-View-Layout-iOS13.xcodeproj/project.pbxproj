@@ -20,6 +20,7 @@
 		0D18C6F124392C700081C52A /* TwoColumnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18C6F024392C700081C52A /* TwoColumnViewController.swift */; };
 		0D18C6F3243A0B020081C52A /* InsetItemsGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18C6F2243A0B020081C52A /* InsetItemsGridViewController.swift */; };
 		0D18C6F5243A18AB0081C52A /* DistinctSectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18C6F4243A18AB0081C52A /* DistinctSectionsViewController.swift */; };
+		0D18C6F7243A29FE0081C52A /* AdaptiveSectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18C6F6243A29FE0081C52A /* AdaptiveSectionsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		0D18C6F024392C700081C52A /* TwoColumnViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoColumnViewController.swift; sourceTree = "<group>"; };
 		0D18C6F2243A0B020081C52A /* InsetItemsGridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetItemsGridViewController.swift; sourceTree = "<group>"; };
 		0D18C6F4243A18AB0081C52A /* DistinctSectionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistinctSectionsViewController.swift; sourceTree = "<group>"; };
+		0D18C6F6243A29FE0081C52A /* AdaptiveSectionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptiveSectionsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 				0D18C6F024392C700081C52A /* TwoColumnViewController.swift */,
 				0D18C6F2243A0B020081C52A /* InsetItemsGridViewController.swift */,
 				0D18C6F4243A18AB0081C52A /* DistinctSectionsViewController.swift */,
+				0D18C6F6243A29FE0081C52A /* AdaptiveSectionsViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -182,6 +185,7 @@
 				0D18C6EF243921F10081C52A /* MenuTableViewController.swift in Sources */,
 				0D18C6F3243A0B020081C52A /* InsetItemsGridViewController.swift in Sources */,
 				0D11C6A124366400006D9167 /* AppDelegate.swift in Sources */,
+				0D18C6F7243A29FE0081C52A /* AdaptiveSectionsViewController.swift in Sources */,
 				0D11C6A324366400006D9167 /* SceneDelegate.swift in Sources */,
 				0D18C6F124392C700081C52A /* TwoColumnViewController.swift in Sources */,
 				0D18C6E82438CA550081C52A /* DummyCell.swift in Sources */,

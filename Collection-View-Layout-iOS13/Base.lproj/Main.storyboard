@@ -111,6 +111,21 @@
             </objects>
             <point key="canvasLocation" x="4481" y="-275"/>
         </scene>
+        <!--Adaptive Sections View Controller-->
+        <scene sceneID="vSt-ge-cXX">
+            <objects>
+                <viewController storyboardIdentifier="AdaptiveSectionsViewController" id="Q5h-fa-CHv" customClass="AdaptiveSectionsViewController" customModule="Collection_View_Layout_iOS13" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ADg-Ah-VHl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="i5l-I5-Oc9"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XFu-Ju-jNG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5283" y="-275"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="QZx-Hu-6vU">
             <objects>
