@@ -82,6 +82,7 @@ class NestedGroupsViewController: UIViewController {
                                                    heightDimension: .fractionalHeight(0.4)),
                 subitems: [topItem, bottomNestedGroup])
             let section = NSCollectionLayoutSection(group: nestedGroup)
+            // section.orthogonalScrollingBehavior = .continuous
             return section
             
         }
