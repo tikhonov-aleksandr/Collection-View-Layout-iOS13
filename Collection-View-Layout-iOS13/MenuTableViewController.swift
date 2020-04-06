@@ -20,7 +20,8 @@ class MenuTableViewController: UITableViewController {
             "TwoColumnViewController",
             "InsetItemsGridViewController",
             "DistinctSectionsViewController",
-            "AdaptiveSectionsViewController"
+            "AdaptiveSectionsViewController",
+            "NestedGroupsViewController"
         ]
     }
 
