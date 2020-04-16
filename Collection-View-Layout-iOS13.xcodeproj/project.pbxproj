@@ -22,6 +22,7 @@
 		0D18C6F5243A18AB0081C52A /* DistinctSectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18C6F4243A18AB0081C52A /* DistinctSectionsViewController.swift */; };
 		0D18C6F7243A29FE0081C52A /* AdaptiveSectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18C6F6243A29FE0081C52A /* AdaptiveSectionsViewController.swift */; };
 		0D18C6F9243B88E00081C52A /* NestedGroupsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D18C6F8243B88E00081C52A /* NestedGroupsViewController.swift */; };
+		513F778A2448FDBC00B6FD94 /* AppStoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513F77892448FDBC00B6FD94 /* AppStoreViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		0D18C6F4243A18AB0081C52A /* DistinctSectionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistinctSectionsViewController.swift; sourceTree = "<group>"; };
 		0D18C6F6243A29FE0081C52A /* AdaptiveSectionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptiveSectionsViewController.swift; sourceTree = "<group>"; };
 		0D18C6F8243B88E00081C52A /* NestedGroupsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NestedGroupsViewController.swift; sourceTree = "<group>"; };
+		513F77892448FDBC00B6FD94 /* AppStoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoreViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 		0D11C69F24366400006D9167 /* Collection-View-Layout-iOS13 */ = {
 			isa = PBXGroup;
 			children = (
+				513F77882448FDA700B6FD94 /* AppStore */,
 				0D18C6EA243919200081C52A /* View Controllers */,
 				0D18C6EB2439192C0081C52A /* Cells */,
 				0D11C6A024366400006D9167 /* AppDelegate.swift */,
@@ -108,6 +111,14 @@
 				0D18C6E72438CA550081C52A /* DummyCell.xib */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		513F77882448FDA700B6FD94 /* AppStore */ = {
+			isa = PBXGroup;
+			children = (
+				513F77892448FDBC00B6FD94 /* AppStoreViewController.swift */,
+			);
+			path = AppStore;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,6 +197,7 @@
 				0D11C6A524366400006D9167 /* ListViewController.swift in Sources */,
 				0D18C6ED243921370081C52A /* GridViewController.swift in Sources */,
 				0D18C6EF243921F10081C52A /* MenuTableViewController.swift in Sources */,
+				513F778A2448FDBC00B6FD94 /* AppStoreViewController.swift in Sources */,
 				0D18C6F3243A0B020081C52A /* InsetItemsGridViewController.swift in Sources */,
 				0D11C6A124366400006D9167 /* AppDelegate.swift in Sources */,
 				0D18C6F7243A29FE0081C52A /* AdaptiveSectionsViewController.swift in Sources */,

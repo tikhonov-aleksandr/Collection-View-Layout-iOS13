@@ -36,6 +36,21 @@
             </objects>
             <point key="canvasLocation" x="392.75362318840581" y="125.89285714285714"/>
         </scene>
+        <!--App Store View Controller-->
+        <scene sceneID="8Pb-H9-eZ4">
+            <objects>
+                <viewController storyboardIdentifier="AppStoreViewController" id="HHv-vo-nRj" customClass="AppStoreViewController" customModule="Collection_View_Layout_iOS13" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="teB-yy-fdd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Z22-Re-ZVQ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kAn-mI-UNb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1261" y="465"/>
+        </scene>
         <!--List View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
