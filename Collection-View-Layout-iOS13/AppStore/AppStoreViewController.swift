@@ -31,10 +31,8 @@ class AppStoreViewController: UIViewController {
             
             guard let sectionKind = Section(rawValue: sectionIndex) else { return nil }
 
-            let group = self.sectionGroup(for: sectionKind)
+            let section = self.layoutSection(for: sectionKind)
             
-            let section = NSCollectionLayoutSection(group: group)
-            section.contentInsets = .init(top: 20, leading: 20, bottom: 20, trailing: 20)
             return section
         }
         return layout
@@ -71,26 +69,26 @@ class AppStoreViewController: UIViewController {
         dataSource.apply(snapshot, animatingDifferences: false)
     }
     
-    private func sectionGroup(for section: Section) -> NSCollectionLayoutGroup {
+    private func layoutSection(for section: Section) -> NSCollectionLayoutSection {
         switch section {
         case .banner:
-            return bannerGroup()
+            return bannerSection()
         case .apps:
-            return appsGroup()
+            return appsSection()
         case .category:
-            return categoryGroup()
+            return categorySection()
         }
     }
     
-    private func bannerGroup() -> NSCollectionLayoutGroup {
+    private func bannerSection() -> NSCollectionLayoutSection {
         
     }
     
-    private func appsGroup() -> NSCollectionLayoutGroup {
+    private func appsSection() -> NSCollectionLayoutSection {
         
     }
     
-    private func categoryGroup() -> NSCollectionLayoutGroup {
+    private func categorySection() -> NSCollectionLayoutSection {
         
     }
 }
