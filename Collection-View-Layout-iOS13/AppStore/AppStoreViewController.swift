@@ -27,11 +27,14 @@ class AppStoreViewController: UIViewController {
     }
     
     private func createLayout() -> UICollectionViewLayout {
-        let layout = UICollectionViewCompositionalLayout { (sectionIndex, layoutEnvironment) -> NSCollectionLayoutSection? in
+        let sectionProvider: UICollectionViewCompositionalLayoutSectionProvider = { (sectionIndex, layoutEnvironment) -> NSCollectionLayoutSection? in
             guard let sectionKind = Section(rawValue: sectionIndex) else { return nil }
             let section = self.layoutSection(for: sectionKind)
             return section
         }
+        let config = UICollectionViewCompositionalLayoutConfiguration()
+        config.interSectionSpacing = 16.0
+        let layout = UICollectionViewCompositionalLayout.init(sectionProvider: sectionProvider, configuration: config)
         return layout
     }
     
@@ -55,15 +58,16 @@ class AppStoreViewController: UIViewController {
             return cell
         }
         
-        let itemsPerSection = 10
+        let itemsPerSection = 20
         var snapshot = NSDiffableDataSourceSnapshot<Section, Int>()
-        let sections: [Section] = [.banner]
-        sections.forEach {
-            snapshot.appendSections([$0])
-            let itemOffset = $0.rawValue * itemsPerSection
-            let itemUpperbound = itemOffset + itemsPerSection
-            snapshot.appendItems(Array(itemOffset..<itemUpperbound))
-        }
+        let sections: [Section] = [.banner, .apps, .category]
+        snapshot.appendSections([sections[0]])
+        snapshot.appendItems(Array(0..<itemsPerSection))
+        snapshot.appendSections([sections[1]])
+        snapshot.appendItems(Array(itemsPerSection..<(2 * itemsPerSection)))
+        snapshot.appendSections([sections[2]])
+        snapshot.appendItems(Array((2 * itemsPerSection)..<(2 * itemsPerSection + 6)))
+
         dataSource.apply(snapshot, animatingDifferences: false)
     }
     
@@ -81,20 +85,42 @@ class AppStoreViewController: UIViewController {
     private func bannerSection() -> NSCollectionLayoutSection {
         let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .fractionalHeight(1.0))
         let item = NSCollectionLayoutItem(layoutSize: itemSize)
-        
         let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0/3.0), heightDimension: .absolute(200))
         let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item])
         let section = NSCollectionLayoutSection(group: group)
-        section.interGroupSpacing = 20
+        section.interGroupSpacing = 16
         section.orthogonalScrollingBehavior = .groupPaging
         return section
     }
     
     private func appsSection() -> NSCollectionLayoutSection {
-        NSCollectionLayoutSection(group: .init(layoutSize: .init(widthDimension: .absolute(0), heightDimension: .absolute(0))))
+        let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .fractionalHeight(1.0/3.0)) // height is ignored
+        let item = NSCollectionLayoutItem(layoutSize: itemSize)
+        
+        let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .fractionalHeight(1.0))
+        let group = NSCollectionLayoutGroup.vertical(layoutSize: groupSize, subitem: item, count: 3) // <<<===
+        group.interItemSpacing = .fixed(16.0)
+        
+        let rootGroupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0/3.0), heightDimension: .absolute(200))
+        let rootGroup = NSCollectionLayoutGroup.horizontal(layoutSize: rootGroupSize, subitems: [group])
+        let section = NSCollectionLayoutSection(group: rootGroup)
+        section.interGroupSpacing = 16
+        section.orthogonalScrollingBehavior = .groupPaging
+        return section
     }
     
     private func categorySection() -> NSCollectionLayoutSection {
-        NSCollectionLayoutSection(group: .init(layoutSize: .init(widthDimension: .absolute(0), heightDimension: .absolute(0))))
+        let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .fractionalHeight(1.0/3.0)) // height is ignored
+        let item = NSCollectionLayoutItem(layoutSize: itemSize)
+        
+        let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .fractionalHeight(1.0)) // width is ignored
+        let group = NSCollectionLayoutGroup.vertical(layoutSize: groupSize, subitem: item, count: 3) // <<<===
+        group.interItemSpacing = .fixed(16.0)
+        
+        let rootGroupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .absolute(200))
+        let rootGroup = NSCollectionLayoutGroup.horizontal(layoutSize: rootGroupSize, subitem: group, count: 2) // <<<===
+        rootGroup.interItemSpacing = .fixed(16.0)
+        let section = NSCollectionLayoutSection(group: rootGroup)
+        return section
     }
 }
