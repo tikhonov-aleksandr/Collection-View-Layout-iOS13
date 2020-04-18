@@ -21,18 +21,15 @@ class AppStoreViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.title = "Distinct Sections"
+        navigationItem.title = "AppStore"
         configureHierarchy()
         configureDataSource()
     }
     
     private func createLayout() -> UICollectionViewLayout {
         let layout = UICollectionViewCompositionalLayout { (sectionIndex, layoutEnvironment) -> NSCollectionLayoutSection? in
-            
             guard let sectionKind = Section(rawValue: sectionIndex) else { return nil }
-
             let section = self.layoutSection(for: sectionKind)
-            
             return section
         }
         return layout
@@ -58,9 +55,10 @@ class AppStoreViewController: UIViewController {
             return cell
         }
         
-        let itemsPerSection = 6
+        let itemsPerSection = 10
         var snapshot = NSDiffableDataSourceSnapshot<Section, Int>()
-        Section.allCases.forEach {
+        let sections: [Section] = [.banner]
+        sections.forEach {
             snapshot.appendSections([$0])
             let itemOffset = $0.rawValue * itemsPerSection
             let itemUpperbound = itemOffset + itemsPerSection
@@ -81,14 +79,22 @@ class AppStoreViewController: UIViewController {
     }
     
     private func bannerSection() -> NSCollectionLayoutSection {
+        let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .fractionalHeight(1.0))
+        let item = NSCollectionLayoutItem(layoutSize: itemSize)
         
+        let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0/3.0), heightDimension: .absolute(200))
+        let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item])
+        let section = NSCollectionLayoutSection(group: group)
+        section.interGroupSpacing = 20
+        section.orthogonalScrollingBehavior = .groupPaging
+        return section
     }
     
     private func appsSection() -> NSCollectionLayoutSection {
-        
+        NSCollectionLayoutSection(group: .init(layoutSize: .init(widthDimension: .absolute(0), heightDimension: .absolute(0))))
     }
     
     private func categorySection() -> NSCollectionLayoutSection {
-        
+        NSCollectionLayoutSection(group: .init(layoutSize: .init(widthDimension: .absolute(0), heightDimension: .absolute(0))))
     }
 }
