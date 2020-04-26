@@ -31,6 +31,10 @@
 		0DF75F11245608310066F192 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF75F0F245608310066F192 /* CategoryCell.swift */; };
 		0DF75F12245608310066F192 /* CategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DF75F10245608310066F192 /* CategoryCell.xib */; };
 		0DF75F14245609520066F192 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF75F13245609520066F192 /* Category.swift */; };
+		0DF75F1624561FB00066F192 /* FeatureLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF75F1524561FB00066F192 /* FeatureLayout.swift */; };
+		0DF75F18245625B80066F192 /* Feature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF75F17245625B80066F192 /* Feature.swift */; };
+		0DF75F1B245626560066F192 /* FeatureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF75F19245626560066F192 /* FeatureCell.swift */; };
+		0DF75F1C245626560066F192 /* FeatureCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DF75F1A245626560066F192 /* FeatureCell.xib */; };
 		513F778A2448FDBC00B6FD94 /* AppStoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513F77892448FDBC00B6FD94 /* AppStoreViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +65,10 @@
 		0DF75F0F245608310066F192 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 		0DF75F10245608310066F192 /* CategoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCell.xib; sourceTree = "<group>"; };
 		0DF75F13245609520066F192 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		0DF75F1524561FB00066F192 /* FeatureLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeatureLayout.swift; sourceTree = "<group>"; };
+		0DF75F17245625B80066F192 /* Feature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feature.swift; sourceTree = "<group>"; };
+		0DF75F19245626560066F192 /* FeatureCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureCell.swift; sourceTree = "<group>"; };
+		0DF75F1A245626560066F192 /* FeatureCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeatureCell.xib; sourceTree = "<group>"; };
 		513F77892448FDBC00B6FD94 /* AppStoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoreViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -140,6 +148,8 @@
 				0D61DBCC244BAA4700C5F633 /* AppCell.xib */,
 				0DF75F0F245608310066F192 /* CategoryCell.swift */,
 				0DF75F10245608310066F192 /* CategoryCell.xib */,
+				0DF75F19245626560066F192 /* FeatureCell.swift */,
+				0DF75F1A245626560066F192 /* FeatureCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -150,6 +160,7 @@
 				0D61DBC9244BA4C700C5F633 /* Banner.swift */,
 				0D61DBCF244BAF0000C5F633 /* App.swift */,
 				0DF75F13245609520066F192 /* Category.swift */,
+				0DF75F17245625B80066F192 /* Feature.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -160,6 +171,7 @@
 				0D61DBC8244BA4BB00C5F633 /* Model */,
 				0D61DBC7244BA4B200C5F633 /* Cells */,
 				513F77892448FDBC00B6FD94 /* AppStoreViewController.swift */,
+				0DF75F1524561FB00066F192 /* FeatureLayout.swift */,
 			);
 			path = AppStore;
 			sourceTree = "<group>";
@@ -226,6 +238,7 @@
 				0DF75F12245608310066F192 /* CategoryCell.xib in Resources */,
 				0D18C6E92438CA550081C52A /* DummyCell.xib in Resources */,
 				0D11C6AA24366401006D9167 /* Assets.xcassets in Resources */,
+				0DF75F1C245626560066F192 /* FeatureCell.xib in Resources */,
 				0D11C6A824366400006D9167 /* Main.storyboard in Resources */,
 				0D61DBC6244B93B000C5F633 /* BannerCell.xib in Resources */,
 				0D61DBCE244BAA4700C5F633 /* AppCell.xib in Resources */,
@@ -247,14 +260,17 @@
 				0DF75F14245609520066F192 /* Category.swift in Sources */,
 				0D61DBC5244B93B000C5F633 /* BannerCell.swift in Sources */,
 				0D61DBD0244BAF0000C5F633 /* App.swift in Sources */,
+				0DF75F1B245626560066F192 /* FeatureCell.swift in Sources */,
 				0D18C6EF243921F10081C52A /* MenuTableViewController.swift in Sources */,
 				513F778A2448FDBC00B6FD94 /* AppStoreViewController.swift in Sources */,
 				0D18C6F3243A0B020081C52A /* InsetItemsGridViewController.swift in Sources */,
 				0D11C6A124366400006D9167 /* AppDelegate.swift in Sources */,
+				0DF75F18245625B80066F192 /* Feature.swift in Sources */,
 				0D18C6F7243A29FE0081C52A /* AdaptiveSectionsViewController.swift in Sources */,
 				0D18C6F9243B88E00081C52A /* NestedGroupsViewController.swift in Sources */,
 				0D11C6A324366400006D9167 /* SceneDelegate.swift in Sources */,
 				0D61DBCA244BA4C700C5F633 /* Banner.swift in Sources */,
+				0DF75F1624561FB00066F192 /* FeatureLayout.swift in Sources */,
 				0D18C6F124392C700081C52A /* TwoColumnViewController.swift in Sources */,
 				0D18C6E82438CA550081C52A /* DummyCell.swift in Sources */,
 			);
