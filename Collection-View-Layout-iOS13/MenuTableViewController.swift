@@ -22,7 +22,8 @@ class MenuTableViewController: UITableViewController {
             "DistinctSectionsViewController",
             "AdaptiveSectionsViewController",
             "NestedGroupsViewController",
-            "AppStoreViewController"
+            "AppStoreViewController",
+            "CardsViewController",
         ]
     }
 

@@ -51,6 +51,21 @@
             </objects>
             <point key="canvasLocation" x="1261" y="465"/>
         </scene>
+        <!--Cards View Controller-->
+        <scene sceneID="unG-Su-AbC">
+            <objects>
+                <viewController storyboardIdentifier="CardsViewController" id="64T-dq-gPc" customClass="CardsViewController" customModule="Collection_View_Layout_iOS13" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mfb-XT-EYu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="82L-cL-c7d"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pmu-Op-nBv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2054" y="473"/>
+        </scene>
         <!--List View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
