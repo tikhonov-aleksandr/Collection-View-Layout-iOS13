@@ -43,6 +43,10 @@
 		51551DB0245F155F0078F30E /* ActionCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51551DAE245F155F0078F30E /* ActionCollectionViewCell.xib */; };
 		51551DB3245F30EE0078F30E /* SubmitCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51551DB1245F30EE0078F30E /* SubmitCollectionViewCell.swift */; };
 		51551DB4245F30EE0078F30E /* SubmitCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51551DB2245F30EE0078F30E /* SubmitCollectionViewCell.xib */; };
+		51551DB7245F44A20078F30E /* InfoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51551DB5245F44A20078F30E /* InfoCollectionViewCell.swift */; };
+		51551DB8245F44A20078F30E /* InfoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51551DB6245F44A20078F30E /* InfoCollectionViewCell.xib */; };
+		51551DBB245F480B0078F30E /* SettingsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51551DB9245F480B0078F30E /* SettingsCollectionViewCell.swift */; };
+		51551DBC245F480B0078F30E /* SettingsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51551DBA245F480B0078F30E /* SettingsCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -84,6 +88,10 @@
 		51551DAE245F155F0078F30E /* ActionCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActionCollectionViewCell.xib; sourceTree = "<group>"; };
 		51551DB1245F30EE0078F30E /* SubmitCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitCollectionViewCell.swift; sourceTree = "<group>"; };
 		51551DB2245F30EE0078F30E /* SubmitCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubmitCollectionViewCell.xib; sourceTree = "<group>"; };
+		51551DB5245F44A20078F30E /* InfoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoCollectionViewCell.swift; sourceTree = "<group>"; };
+		51551DB6245F44A20078F30E /* InfoCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoCollectionViewCell.xib; sourceTree = "<group>"; };
+		51551DB9245F480B0078F30E /* SettingsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCollectionViewCell.swift; sourceTree = "<group>"; };
+		51551DBA245F480B0078F30E /* SettingsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -209,6 +217,10 @@
 				51551DAE245F155F0078F30E /* ActionCollectionViewCell.xib */,
 				51551DB1245F30EE0078F30E /* SubmitCollectionViewCell.swift */,
 				51551DB2245F30EE0078F30E /* SubmitCollectionViewCell.xib */,
+				51551DB5245F44A20078F30E /* InfoCollectionViewCell.swift */,
+				51551DB6245F44A20078F30E /* InfoCollectionViewCell.xib */,
+				51551DB9245F480B0078F30E /* SettingsCollectionViewCell.swift */,
+				51551DBA245F480B0078F30E /* SettingsCollectionViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -274,9 +286,11 @@
 				0D11C6AD24366401006D9167 /* LaunchScreen.storyboard in Resources */,
 				51551DAC245F12690078F30E /* ActivateCollectionViewCell.xib in Resources */,
 				0DF75F12245608310066F192 /* CategoryCell.xib in Resources */,
+				51551DBC245F480B0078F30E /* SettingsCollectionViewCell.xib in Resources */,
 				0D18C6E92438CA550081C52A /* DummyCell.xib in Resources */,
 				51551DB4245F30EE0078F30E /* SubmitCollectionViewCell.xib in Resources */,
 				0D11C6AA24366401006D9167 /* Assets.xcassets in Resources */,
+				51551DB8245F44A20078F30E /* InfoCollectionViewCell.xib in Resources */,
 				0DF75F1C245626560066F192 /* FeatureCell.xib in Resources */,
 				51551DB0245F155F0078F30E /* ActionCollectionViewCell.xib in Resources */,
 				0D11C6A824366400006D9167 /* Main.storyboard in Resources */,
@@ -304,6 +318,7 @@
 				0D18C6EF243921F10081C52A /* MenuTableViewController.swift in Sources */,
 				513F778A2448FDBC00B6FD94 /* AppStoreViewController.swift in Sources */,
 				0D18C6F3243A0B020081C52A /* InsetItemsGridViewController.swift in Sources */,
+				51551DB7245F44A20078F30E /* InfoCollectionViewCell.swift in Sources */,
 				0D11C6A124366400006D9167 /* AppDelegate.swift in Sources */,
 				0DF75F18245625B80066F192 /* Feature.swift in Sources */,
 				0D18C6F7243A29FE0081C52A /* AdaptiveSectionsViewController.swift in Sources */,
@@ -315,6 +330,7 @@
 				0DF75F1624561FB00066F192 /* FeatureLayout.swift in Sources */,
 				51551DAB245F12690078F30E /* ActivateCollectionViewCell.swift in Sources */,
 				0D18C6F124392C700081C52A /* TwoColumnViewController.swift in Sources */,
+				51551DBB245F480B0078F30E /* SettingsCollectionViewCell.swift in Sources */,
 				51551DAF245F155F0078F30E /* ActionCollectionViewCell.swift in Sources */,
 				0D18C6E82438CA550081C52A /* DummyCell.swift in Sources */,
 			);
